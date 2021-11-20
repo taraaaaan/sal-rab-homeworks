@@ -14,6 +14,7 @@ function calcShipping(sum, min, shipping) {
                
     }       
 
+    
 
 
     // создайте переменную shippingSum
