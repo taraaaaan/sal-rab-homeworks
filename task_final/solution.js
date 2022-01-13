@@ -44,21 +44,9 @@ function sendRequest(name, phone, address, goods, sum) {
 
         data.goods.push(object);
     }
-
-
+   
     
-    //data.order.address = address;
-
-    //address = {
-
-    //street: ' ',
-    //house: ' ',
-    //entrance: ' ',
-    //floor: ' ',
-    //flat: ' ',
-   // };
-    
-    address = 'ул ${address.street}, дом ${address.house}, вход ${address.entrance}, этаж ${address.floor}, квартира ${address.flat}';
+    data.order.address = `ул. ${address.street}, дом ${address.house}, ${address.entrance} подъезд, ${address.floor} этаж, кв ${address.flat}`;
     data.order.sum = sum;
     data.client = name + ' ' + phone;
     
